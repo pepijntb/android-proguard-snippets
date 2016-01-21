@@ -30,6 +30,12 @@ android {
 }
 ```
 
+Instead of declaring each configuration file manually, you could also store them in a seperate directory and include them all at once:
+```groovy
+FileCollection proGuardFileCollection = files { file('./proguard').listFiles() }
+proguardFiles(proGuardFileCollection)
+```
+
 ### Libraries
 * [ACRA 4.5.0](https://github.com/ACRA/acra)
 * [ActionBarSherlock 4.4.0](http://actionbarsherlock.com/)
@@ -55,6 +61,7 @@ android {
 * [Jackson 2.x](http://wiki.fasterxml.com/JacksonHome)
 * [Joda-Convert 1.6](http://www.joda.org/joda-convert/)
 * [Joda-Time 2.3](http://www.joda.org/joda-time/)
+* [LoganSquare](https://github.com/bluelinelabs/LoganSquare)
 * [New Relic](https://docs.newrelic.com/docs/mobile-monitoring/mobile-sdk-api/new-relic-mobile-sdk-api/working-android-sdk-api)
 * [Parse](https://parse.com/products/android)
 * [Realm](http://realm.io/news/realm-for-android/)
@@ -68,6 +75,7 @@ android {
 * [Square Picasso](https://github.com/square/picasso)
 * [Square Retrofit](http://square.github.io/retrofit/)
 * [Square Wire](https://github.com/square/wire)
+* [SVG Android](https://github.com/pents90/svg-android)
 * [Icepick](https://github.com/frankiesardo/icepick)
 * [Simple-Xml] (http://simple.sourceforge.net/)
 
